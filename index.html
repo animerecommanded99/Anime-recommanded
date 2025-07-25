@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anime Universe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+  <div class="container">
+    <h1>🌌 Anime Universe</h1>
+    <input type="text" id="searchInput" placeholder="Search genre (e.g. Shonen)" />
+    <button id="toggleMode">🌙 Light Mode</button>
+
+    <div class="genre-buttons">
+      <button class="genre-btn" data-genre="shonen">🔥 Shonen</button>
+      <button class="genre-btn" data-genre="romance">💖 Romance</button>
+      <button class="genre-btn" data-genre="comedy">😂 Comedy</button>
+      <button class="genre-btn" data-genre="horror">👻 Horror</button>
+      <button class="genre-btn" data-genre="fantasy">🧙 Fantasy</button>
+      <button class="genre-btn" data-genre="film">🎬 Anime Film</button>
+    </div>
+
+    <div id="animeList"></div>
+    <div id="commentSection" class="comment-box" style="display:none;">
+      <h3>💬 Share your opinion:</h3>
+      <textarea id="commentInput" placeholder="Write your thoughts..."></textarea>
+      <button onclick="submitComment()">Submit</button>
+      <div id="commentsDisplay"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
